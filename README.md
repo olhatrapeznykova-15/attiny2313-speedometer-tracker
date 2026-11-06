@@ -6,14 +6,14 @@
 
 ---
 
-##  Project Overview
+## 📌 Project Overview
 This repository contains the complete hardware architecture, EDA simulation models, printed circuit board (PCB) layouts, and core firmware logic for a self-sustaining digital speedometer and calorie tracker designed for stationary exercise bikes. 
 
 The system utilizes an **ATtiny2313 (8-bit AVR RISC MCU)**, incorporates a magnetic reed switch (gerkon) sensor for velocity logging (5 km/h to 100 km/h operational range), implements an energy-harvesting DC dynamo power delivery network, and features smart audio-tonal indication alongside an LCD telemetry display.
 
 ---
 
-##  System Hardware Architecture
+## 🛠 System Hardware Architecture
 
 ### 1. Structural Design & Power Management
 Driven by a DC dynamo machine mounted on the bike wheel fork, the system features a custom voltage stabilization network. This subsystem regulates power fluctuations (5V to 15V over a 5 km/h to 100 km/h speed span) into a stable rails grid, protecting the liquid crystal display (LCD) and the MCU core.
@@ -32,7 +32,7 @@ To assist the user in maintaining a steady workout pace, the firmware generates 
 
 ---
 
-## EDA Simulation & PCB Layout
+## 🔬 EDA Simulation & PCB Layout
 
 ### 1. Proteus VSM Virtual System Modeling
 Full hardware-software interaction was simulated and validated in **Proteus VSM**. The simulation snapshot proves successful runtime tracking: operational speed at 36 km/h, timer at 732 seconds, and active dynamic calculation reaching `4432 Kcalories` on the virtual LCD interface.
@@ -48,7 +48,7 @@ A compact double-sided printed circuit board layout (80x35 mm footprint) enginee
 
 ---
 
-## Mathematical Modeling & Algorithmic Logic
+## 📊 Mathematical Modeling & Algorithmic Logic
 
 ### 1. Main Telemetry Flowchart & Interrupt Subroutines
 The firmware structures asynchronous telemetry logging by capturing magnetic reed switch pulses on the `INT0` external interrupt vector. Timer/Counter 1 ticks a persistent 5-second sampling window to divide rotational counts, factor wheel diameter constants, and execute dynamic calculations.
@@ -68,7 +68,5 @@ $$\text{Dynamic Integration Rate (kcal/sec)} = \frac{1}{60} \left[ 0.02P \times 
 
 ---
 
-## Repository Directory Structure
-*   `/schematics` - Structural, MCU core (SPI interfacing), audio amplifier circuit diagrams, and DipTrace PCB layouts.
-*   `/simulation` - Proteus VSM virtual validation logs, system run states, and terminal behavior captures.
-*   `/documentation` - Main loop/interrupt subroutines flowcharts, mathematical approximation tables, and the complete thesis defense notes.
+## 📁 Repository Directory Structure
+*   `/schematics` - Structural drawings, MCU core (SPI interfacing), audio amplifier circuit diagrams, and DipTrace PCB layout blueprints.
