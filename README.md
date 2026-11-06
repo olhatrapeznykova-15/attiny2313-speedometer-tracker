@@ -44,7 +44,7 @@ Full hardware-software interaction was simulated and validated in **Proteus VSM*
 ### 2. PCB Engineering & CAD Design
 A compact double-sided printed circuit board layout (80x35 mm footprint) engineered and routed using the **DipTrace CAD suite**. It features optimized trace geometries for surface-mount technology (SMD 0805/1210 form factors) with a 2.56 mm coordinate matrix grid.
 
-<img src="attiny2313-speedometer-tracker/schematics/pcb_layout.jpg" width="700" alt="attiny2313-speedometer-tracker/documentation/interrupt_logic.jpg">
+<img src="attiny2313-speedometer-tracker/schematics/pcb_layout.jpg" width="700" alt="PCB Layout Design in DipTrace">
 
 ---
 
@@ -55,7 +55,7 @@ The firmware structures asynchronous telemetry logging by capturing magnetic ree
 
 | Main Application Loop | Interrupt Vectors (INT0 & TC1) |
 |---|---|
-| <img src="attiny2313-speedometer-tracker/documentation/main_algorithm.jpg" width="350" alt="Main Firmware Flowchart"> | <img src="documentation/interrupt_logic.jpg" width="350" alt="Interrupt Service Routines"> |
+| <img src="attiny2313-speedometer-tracker/documentation/main_algorithm.jpg" width="350" alt="Main Firmware Flowchart"> | <img src="attiny2313-speedometer-tracker/documentation/interrupt_logic.jpg" width="350" alt="Interrupt Service Routines"> |
 
 ### 2. Calorie Burn Approximation Metrics
 The mathematical framework computes energy expenditure metrics in real time based on a tailored mathematical approximation model. The algorithm scales athlete body mass variables ($P$) directly against instantaneous velocity outputs ($V$):
