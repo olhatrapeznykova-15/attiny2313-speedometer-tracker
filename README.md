@@ -18,17 +18,17 @@ The system utilizes an **ATtiny2313 (8-bit AVR RISC MCU)**, incorporates a magne
 ### 1. Structural Design & Power Management
 Driven by a DC dynamo machine mounted on the bike wheel fork, the system features a custom voltage stabilization network. This subsystem regulates power fluctuations (5V to 15V over a 5 km/h to 100 km/h speed span) into a stable rails grid, protecting the liquid crystal display (LCD) and the MCU core.
 
-<img src="schematics/structural_schematic" width="700" alt="Structural Schematic">
+<img src="schematics/structural_schematic.jpg" width="700" alt="Structural Schematic">
 
 ### 2. Microcontroller Core Circuit
 The design features an ATtiny2313 MCU clocked via an external 10MHz crystal oscillator (ZQ1) to ensure strict timing interval measurements and mitigate potential firmware execution locks. Data transfer to the liquid crystal telemetry display is executed via a synchronous serial (**SPI-formatted**) communication protocol topology.
 
-<img src="schematics/mcu_circuit" width="700" alt="MCU Circuit Schematic">
+<img src="schematics/mcu_circuit.jpg" width="700" alt="MCU Circuit Schematic">
 
 ### 3. Audio Frequency Conditioning & Power Amplifier
 To assist the user in maintaining a steady workout pace, the firmware generates a rectangular audio waveform (meander) where the pitch frequency scales dynamically with the velocity target corridor. To suppress raw commutation overtones and deliver a clear harmonic wave, the signal passes through a calculated 8th-order Butterworth active Low-Pass Filter (LPF) utilizing AD812 op-amps and is driven via an SA58631 BTL audio power amplifier.
 
-<img src="schematics/audio_filter_circuit" width="700" alt="Active LPF and Audio Circuit">
+<img src="schematics/audio_filter_circuit.jpg" width="700" alt="Active LPF and Audio Circuit">
 
 ---
 
@@ -44,7 +44,7 @@ Full hardware-software interaction was simulated and validated in **Proteus VSM*
 ### 2. PCB Engineering & CAD Design
 A compact double-sided printed circuit board layout (80x35 mm footprint) engineered and routed using the **DipTrace CAD suite**. It features optimized trace geometries for surface-mount technology (SMD 0805/1210 form factors) with a 2.56 mm coordinate matrix grid.
 
-<img src="schematics/pcb_layout.png" width="700" alt="PCB Layout Design in DipTrace">
+<img src="schematics/pcb_layout.jpg" width="700" alt="PCB Layout Design in DipTrace">
 
 ---
 
@@ -55,7 +55,7 @@ The firmware structures asynchronous telemetry logging by capturing magnetic ree
 
 | Main Application Loop | Interrupt Vectors (INT0 & TC1) |
 |---|---|
-| <img src="documentation/main_algorithm" width="350" alt="Main Firmware Flowchart"> | <img src="documentation/interrupt_logic" width="350" alt="Interrupt Service Routines"> |
+| <img src="documentation/main_algorithm.jpg" width="350" alt="Main Firmware Flowchart"> | <img src="documentation/interrupt_logic.jpg" width="350" alt="Interrupt Service Routines"> |
 
 ### 2. Calorie Burn Approximation Metrics
 The mathematical framework computes energy expenditure metrics in real time based on a tailored mathematical approximation model. The algorithm scales athlete body mass variables ($P$) directly against instantaneous velocity outputs ($V$):
@@ -64,7 +64,7 @@ $$\text{Energy Expenditure (kcal/min)} = 0.02P \times 14 \times 1.5 \times V_{\t
 
 $$\text{Dynamic Integration Rate (kcal/sec)} = \frac{1}{60} \left[ 0.02P \times 14 \times 1.5 \times V_{\text{km/h}} \right]$$
 
-<img src="documentation/calorie_table" width="600" alt="Calorie Burn Approximation Model">
+<img src="documentation/calorie_table.jpg" width="600" alt="Calorie Burn Approximation Model">
 
 ---
 
