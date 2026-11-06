@@ -1,7 +1,8 @@
-# attiny2313-speedometer-tracker
-Bachelor's Thesis: AVR-based digital speedometer and calorie tracker for exercise bikes|Graded 95/100 
-Odessa Polytechnic National University (2023)  
-Radioelectronic and Telecommunication Systems  
+# AVR-Based Digital Speedometer & Calorie Tracker for Exercise Bikes
+
+**Bachelor's Thesis** | *Graded 95/100*  
+**Institution:** Odessa Polytechnic National University (2023)  
+**Specialization:** Radioelectronic and Telecommunication Systems  
 
 ---
 
