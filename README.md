@@ -23,7 +23,7 @@ Driven by a DC dynamo machine mounted on the bike wheel fork, the system feature
 ### 2. Microcontroller Core Circuit
 The design features an ATtiny2313 MCU clocked via an external 10MHz crystal oscillator (ZQ1) to ensure strict timing interval measurements and mitigate potential firmware execution locks. Data transfer to the liquid crystal telemetry display is executed via a synchronous serial (**SPI-formatted**) communication protocol topology.
 
-<img src="schematics/mcu_circuit.jpg" width="700" alt="MCU Circuit Schematic">
+<img src="attiny2313-speedometer-tracker/schematics/mcu_circuit.jpg" width="700" alt="MCU Circuit Schematic">
 
 ### 3. Audio Frequency Conditioning & Power Amplifier
 To assist the user in maintaining a steady workout pace, the firmware generates a rectangular audio waveform (meander) where the pitch frequency scales dynamically with the velocity target corridor. To suppress raw commutation overtones and deliver a clear harmonic wave, the signal passes through a calculated 8th-order Butterworth active Low-Pass Filter (LPF) utilizing AD812 op-amps and is driven via an SA58631 BTL audio power amplifier.
