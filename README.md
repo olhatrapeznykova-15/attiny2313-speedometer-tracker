@@ -64,7 +64,7 @@ $$\text{Energy Expenditure (kcal/min)} = 0.02P \times 14 \times 1.5 \times V_{\t
 
 $$\text{Dynamic Integration Rate (kcal/sec)} = \frac{1}{60} \left[ 0.02P \times 14 \times 1.5 \times V_{\text{km/h}} \right]$$
 
-<img src="documentation/calorie_table.jpg" width="600" alt="Calorie Burn Approximation Model">
+<img src="attiny2313-speedometer-tracker/documentation/calorie_table.jpg" width="600" alt="Calorie Burn Approximation Model">
 
 ---
 
