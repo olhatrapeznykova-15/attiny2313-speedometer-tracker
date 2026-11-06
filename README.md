@@ -70,3 +70,5 @@ $$\text{Dynamic Integration Rate (kcal/sec)} = \frac{1}{60} \left[ 0.02P \times 
 
 ## 📁 Repository Directory Structure
 *   `/schematics` - Structural drawings, MCU core (SPI interfacing), audio amplifier circuit diagrams, and DipTrace PCB layout blueprints.
+*   `/simulation` - Proteus VSM virtual validation logs, system run states, and terminal behavior captures.
+*   `/documentation` - Main application loops, interrupt subroutine flowcharts, and mathematical calorie approximation tables.
