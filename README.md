@@ -39,7 +39,7 @@ Full hardware-software interaction was simulated and validated in **Proteus VSM*
 
 | Simulation View: Idle (0 km/h) | Simulation View: Runtime (36 km/h) |
 |---|---|
-| <img src="attiny2313-speedometer-tracker/simulation/proteus_simulation_1.jpg" width="350" alt="Proteus Simulation Idle"> | <img src="simulation/attiny2313-speedometer-tracker/simulation/proteus_simulation_2.jpg" width="350" alt="Proteus Simulation Run"> |
+| <img src="attiny2313-speedometer-tracker/simulation/proteus_simulation_1.jpg" width="350" alt="Proteus Simulation Idle"> | <img src="attiny2313-speedometer-tracker/simulation/proteus_simulation_2.jpg" width="350" alt="Proteus Simulation Run"> |
 
 ### 2. PCB Engineering & CAD Design
 A compact double-sided printed circuit board layout (80x35 mm footprint) engineered and routed using the **DipTrace CAD suite**. It features optimized trace geometries for surface-mount technology (SMD 0805/1210 form factors) with a 2.56 mm coordinate matrix grid.
