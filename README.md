@@ -55,7 +55,7 @@ The firmware structures asynchronous telemetry logging by capturing magnetic ree
 
 | Main Application Loop | Interrupt Vectors (INT0 & TC1) |
 |---|---|
-| <img src="documentation/main_algorithm.jpg" width="350" alt="Main Firmware Flowchart"> | <img src="documentation/interrupt_logic.jpg" width="350" alt="Interrupt Service Routines"> |
+| <img src="attiny2313-speedometer-tracker/documentation/main_algorithm.jpg" width="350" alt="Main Firmware Flowchart"> | <img src="documentation/interrupt_logic.jpg" width="350" alt="Interrupt Service Routines"> |
 
 ### 2. Calorie Burn Approximation Metrics
 The mathematical framework computes energy expenditure metrics in real time based on a tailored mathematical approximation model. The algorithm scales athlete body mass variables ($P$) directly against instantaneous velocity outputs ($V$):
