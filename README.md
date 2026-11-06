@@ -28,7 +28,7 @@ The design features an ATtiny2313 MCU clocked via an external 10MHz crystal osci
 ### 3. Audio Frequency Conditioning & Power Amplifier
 To assist the user in maintaining a steady workout pace, the firmware generates a rectangular audio waveform (meander) where the pitch frequency scales dynamically with the velocity target corridor. To suppress raw commutation overtones and deliver a clear harmonic wave, the signal passes through a calculated 8th-order Butterworth active Low-Pass Filter (LPF) utilizing AD812 op-amps and is driven via an SA58631 BTL audio power amplifier.
 
-<img src="schematics/audio_filter_circuit.jpg" width="700" alt="Active LPF and Audio Circuit">
+<img src="attiny2313-speedometer-tracker/schematics/audio_filter_circuit.jpg" width="700" alt="Active LPF and Audio Circuit">
 
 ---
 
