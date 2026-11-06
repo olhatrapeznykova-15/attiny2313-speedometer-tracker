@@ -18,7 +18,7 @@ The system utilizes an **ATtiny2313 (8-bit AVR RISC MCU)**, incorporates a magne
 ### 1. Structural Design & Power Management
 Driven by a DC dynamo machine mounted on the bike wheel fork, the system features a custom voltage stabilization network. This subsystem regulates power fluctuations (5V to 15V over a 5 km/h to 100 km/h speed span) into a stable rails grid, protecting the liquid crystal display (LCD) and the MCU core.
 
-<img src="schematics/structural_schematic.jpg" width="700" alt="Structural Schematic">
+<img src="attiny2313-speedometer-tracker/schematics/structural_schematic.jpg" width="700" alt="Structural Schematic">
 
 ### 2. Microcontroller Core Circuit
 The design features an ATtiny2313 MCU clocked via an external 10MHz crystal oscillator (ZQ1) to ensure strict timing interval measurements and mitigate potential firmware execution locks. Data transfer to the liquid crystal telemetry display is executed via a synchronous serial (**SPI-formatted**) communication protocol topology.
